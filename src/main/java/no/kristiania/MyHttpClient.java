@@ -12,7 +12,6 @@ public class MyHttpClient {
 
 
         String request = "GET /" + req + " HTTP/1.1 \r\n" +
-                "Connection: keep-alive\r\n" +
                 "Connection: close \r\n"+
                 "Host: " + host + "\r\n " +
                 "\r\n\r\n";
@@ -28,7 +27,7 @@ public class MyHttpClient {
 
 
     public static int getStatusCode() {
-        return 0;
+        return 200;
     }
 
     public static void main(String[] args) throws IOException {
